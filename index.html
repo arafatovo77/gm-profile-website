@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional profile of NUR-A-ALAM, General Manager | RMG Operation at GMS Composite Knitting Ind. Ltd.">
+  <meta name="theme-color" content="#0b1f3a">
+  <title>NUR-A-ALAM | General Manager, RMG Operation</title>
+  <style>
+    :root {
+      --navy: #0b1f3a;
+      --navy-2: #12365c;
+      --blue: #1c5b91;
+      --gold: #d8b56d;
+      --ink: #172437;
+      --muted: #627084;
+      --paper: #f4f7fb;
+      --white: #ffffff;
+      --line: #dce4ee;
+      --shadow: 0 16px 40px rgba(11, 31, 58, .10);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.65;
+    }
+    a { color: inherit; }
+    .container { width: min(1120px, 92%); margin: 0 auto; }
+    .topbar {
+      background: var(--navy);
+      color: #fff;
+      font-size: .9rem;
+      padding: 10px 0;
+    }
+    .topbar-inner { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    .topbar a { text-decoration: none; color: #fff; }
+    header {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(255,255,255,.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 76px; }
+    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .brand-mark {
+      width: 44px; height: 44px; display: grid; place-items: center;
+      color: #fff; background: var(--navy); border-radius: 10px;
+      font-weight: 800; letter-spacing: 1px;
+    }
+    .brand strong { display: block; color: var(--navy); font-size: .98rem; }
+    .brand small { display: block; color: var(--muted); font-size: .78rem; }
+    .nav-links { display: flex; gap: 24px; flex-wrap: wrap; }
+    .nav-links a { text-decoration: none; color: #34465d; font-size: .93rem; font-weight: 700; }
+    .nav-links a:hover { color: var(--blue); }
+    .hero {
+      color: #fff;
+      background: radial-gradient(circle at 85% 15%, rgba(44,103,157,.55), transparent 30%),
+                  linear-gradient(120deg, #08172c 0%, #0b1f3a 55%, #163f67 100%);
+      padding: 82px 0 76px;
+      overflow: hidden;
+    }
+    .hero-grid { display: grid; grid-template-columns: 1.45fr .75fr; align-items: center; gap: 56px; }
+    .eyebrow { color: var(--gold); text-transform: uppercase; letter-spacing: 2.5px; font-size: .78rem; font-weight: 800; }
+    h1 { margin: 12px 0 8px; font-size: clamp(2.5rem, 6vw, 4.8rem); line-height: 1.06; letter-spacing: -1.5px; }
+    .hero h2 { margin: 0 0 22px; color: #dbe8f6; font-size: clamp(1.1rem, 2.5vw, 1.55rem); font-weight: 500; }
+    .hero p { color: #d2deeb; max-width: 650px; font-size: 1.08rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+    .btn {
+      display: inline-flex; justify-content: center; align-items: center; gap: 8px;
+      padding: 12px 19px; border-radius: 8px; text-decoration: none; font-weight: 800;
+      border: 1px solid transparent; transition: transform .2s, background .2s;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { color: var(--navy); background: #fff; }
+    .btn-outline { color: #fff; border-color: rgba(255,255,255,.45); }
+    .profile-card {
+      padding: 30px; border: 1px solid rgba(255,255,255,.18);
+      background: rgba(255,255,255,.08); border-radius: 18px; text-align: center;
+      box-shadow: 0 18px 50px rgba(0,0,0,.14);
+    }
+    .avatar {
+      width: 142px; height: 142px; margin: 0 auto 18px; border-radius: 50%;
+      display: block; object-fit: cover; object-position: center 28%;
+      background: #e9eff6; color: var(--navy);
+      border: 5px solid rgba(255,255,255,.35);
+    }
+    .profile-card h3 { margin: 0; font-size: 1.25rem; }
+    .profile-card p { margin: 4px 0 0; font-size: .94rem; }
+    .profile-card .company-tag { color: #fff; font-weight: 700; margin-top: 14px; }
+    section { padding: 76px 0; }
+    .section-heading { max-width: 720px; margin-bottom: 34px; }
+    .section-heading .eyebrow { color: var(--blue); }
+    h2.section-title { margin: 8px 0 10px; color: var(--navy); font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.2; }
+    .section-heading p { margin: 0; color: var(--muted); }
+    .about-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 28px; align-items: stretch; }
+    .panel { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 28px; box-shadow: var(--shadow); }
+    .panel h3 { margin: 0 0 12px; color: var(--navy); font-size: 1.2rem; }
+    .panel p { margin: 0 0 12px; color: var(--muted); }
+    .facts { display: grid; gap: 0; }
+    .fact { padding: 15px 0; border-bottom: 1px solid var(--line); }
+    .fact:last-child { border-bottom: 0; }
+    .fact span { display: block; color: var(--muted); font-size: .82rem; }
+    .fact strong { display: block; color: var(--navy); margin-top: 2px; }
+    .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .skill {
+      background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 24px;
+      box-shadow: 0 8px 22px rgba(11,31,58,.05);
+    }
+    .skill .number { color: var(--blue); font-weight: 900; font-size: .8rem; letter-spacing: 1.5px; }
+    .skill h3 { color: var(--navy); margin: 10px 0 7px; font-size: 1.1rem; }
+    .skill p { margin: 0; color: var(--muted); font-size: .94rem; }
+    .experience { background: #eaf0f7; }
+    .timeline { border-left: 3px solid var(--blue); padding-left: 24px; max-width: 820px; }
+    .timeline-item { position: relative; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 24px; margin: 0 0 18px; }
+    .timeline-item::before {
+      content: ""; position: absolute; left: -33px; top: 28px; width: 13px; height: 13px;
+      background: var(--gold); border: 3px solid #eaf0f7; border-radius: 50%;
+    }
+    .timeline-item h3 { margin: 0 0 5px; color: var(--navy); }
+    .timeline-item p { margin: 0; color: var(--muted); }
+    .note { margin-top: 18px; color: var(--muted); font-size: .88rem; }
+    .contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 28px; }
+    .contact-list { display: grid; gap: 15px; margin-top: 18px; }
+    .contact-item { display: flex; align-items: flex-start; gap: 12px; }
+    .contact-icon { flex: 0 0 38px; height: 38px; border-radius: 9px; background: #eaf1f8; color: var(--blue); display: grid; place-items: center; font-weight: 900; }
+    .contact-item small { display: block; color: var(--muted); }
+    .contact-item a { color: var(--navy); text-decoration: none; font-weight: 700; overflow-wrap: anywhere; }
+    .contact-item a:hover { text-decoration: underline; }
+    .cta {
+      background: var(--navy); color: #fff; border-radius: 16px; padding: 30px;
+      display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap;
+    }
+    .cta h3 { margin: 0 0 6px; font-size: 1.4rem; }
+    .cta p { margin: 0; color: #cbd9e8; }
+    footer { background: #061326; color: #c4d0df; padding: 26px 0; font-size: .88rem; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    footer a { color: #fff; text-decoration: none; }
+    @media (max-width: 780px) {
+      .nav { padding: 13px 0; align-items: flex-start; flex-direction: column; }
+      .nav-links { gap: 14px; }
+      .hero { padding: 58px 0; }
+      .hero-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 28px; }
+      .profile-card { max-width: 420px; }
+      section { padding: 56px 0; }
+      .skills-grid { grid-template-columns: 1fr; }
+      .topbar-inner { gap: 4px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Professional Profile | RMG Operations</span>
+      <a href="https://www.gmsbd.com/" target="_blank" rel="noopener noreferrer">GMS Composite Knitting Ind. Ltd.</a>
+    </div>
+  </div>
+
+  <header>
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="NUR-A-ALAM home">
+        <span class="brand-mark">NA</span>
+        <span><strong>NUR-A-ALAM</strong><small>General Manager | RMG Operation</small></span>
+      </a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#experience">Career</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Leadership • Operations • Excellence</div>
+          <h1>NUR-A-ALAM</h1>
+          <h2>General Manager | RMG Operation</h2>
+          <p>
+            A professional profile highlighting leadership in Ready-Made Garments (RMG)
+            operations, operational coordination, team development, and a commitment to
+            quality, productivity, and continuous improvement.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#about">Explore Profile <span aria-hidden="true">↘</span></a>
+            <a class="btn btn-outline" href="#contact">Contact Information</a>
+          </div>
+        </div>
+        <aside class="profile-card" aria-label="Profile summary">
+          <img class="avatar" src="profile.jpg" alt="Portrait of NUR-A-ALAM"
+               onerror="this.style.display='none'; this.insertAdjacentHTML('afterend','<div class=&quot;avatar&quot; aria-label=&quot;Initials NA&quot;>NA</div>');">
+          <h3>NUR-A-ALAM</h3>
+          <p>General Manager</p>
+          <p>RMG Operation</p>
+          <p class="company-tag">GMS Composite Knitting Ind. Ltd.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">About</div>
+          <h2 class="section-title">Professional Profile</h2>
+          <p>A concise overview of professional focus and leadership responsibilities.</p>
+        </div>
+        <div class="about-grid">
+          <article class="panel">
+            <h3>About NUR-A-ALAM</h3>
+            <p>
+              NUR-A-ALAM serves as General Manager of RMG Operation at GMS Composite
+              Knitting Ind. Ltd. This profile presents his professional role and focus
+              within garment manufacturing operations.
+            </p>
+            <p>
+              His profile can be expanded with verified career history, educational
+              qualifications, specific achievements, and professional certifications
+              once those details are approved for publication.
+            </p>
+          </article>
+          <aside class="panel">
+            <h3>Profile Details</h3>
+            <div class="facts">
+              <div class="fact"><span>Full Name</span><strong>NUR-A-ALAM</strong></div>
+              <div class="fact"><span>Current Designation</span><strong>General Manager | RMG Operation</strong></div>
+              <div class="fact"><span>Organization</span><strong>GMS Composite Knitting Ind. Ltd.</strong></div>
+              <div class="fact"><span>Industry</span><strong>Ready-Made Garments (RMG)</strong></div>
+              <div class="fact"><span>Company Website</span><strong><a href="https://www.gmsbd.com/" target="_blank" rel="noopener noreferrer">www.gmsbd.com</a></strong></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="expertise">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Professional Focus</div>
+          <h2 class="section-title">Areas of Expertise</h2>
+          <p>Key operational areas relevant to an RMG operations leadership role. Specific claims can be customized after confirmation.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill">
+            <div class="number">01 / OPERATIONS</div>
+            <h3>RMG Operations Management</h3>
+            <p>Operational coordination, workflow oversight, and support for production objectives.</p>
+          </article>
+          <article class="skill">
+            <div class="number">02 / PERFORMANCE</div>
+            <h3>Productivity & Quality</h3>
+            <p>Focus on production efficiency, quality standards, and continuous improvement.</p>
+          </article>
+          <article class="skill">
+            <div class="number">03 / LEADERSHIP</div>
+            <h3>Team Coordination</h3>
+            <p>Cross-functional communication, team alignment, and timely operational follow-up.</p>
+          </article>
+          <article class="skill">
+            <div class="number">04 / PLANNING</div>
+            <h3>Production Planning Support</h3>
+            <p>Coordination around production priorities, schedules, and operational requirements.</p>
+          </article>
+          <article class="skill">
+            <div class="number">05 / COMPLIANCE</div>
+            <h3>Process & Standards</h3>
+            <p>Attention to workplace procedures, process consistency, and company requirements.</p>
+          </article>
+          <article class="skill">
+            <div class="number">06 / IMPROVEMENT</div>
+            <h3>Problem Solving</h3>
+            <p>Identifying operational issues and coordinating practical follow-up actions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience" id="experience">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Career</div>
+          <h2 class="section-title">Professional Experience</h2>
+          <p>The confirmed current position is shown below. Add previous roles only after verifying the details.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <h3>General Manager | RMG Operation</h3>
+            <p><strong>GMS Composite Knitting Ind. Ltd.</strong></p>
+            <p>Current role as provided for this profile. Employment dates, responsibilities, and measurable achievements can be added after confirmation.</p>
+          </article>
+        </div>
+        <p class="note">Note: This website intentionally avoids inventing years of experience, qualifications, awards, or performance figures.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Get in Touch</div>
+          <h2 class="section-title">Contact & Professional Links</h2>
+          <p>For company-related enquiries, use the company website or the professional contact details approved for public display.</p>
+        </div>
+        <div class="contact-grid">
+          <article class="panel">
+            <h3>Professional Contact</h3>
+            <div class="contact-list">
+              <div class="contact-item">
+                <span class="contact-icon" aria-hidden="true">W</span>
+                <div><small>Company Website</small><a href="https://www.gmsbd.com/" target="_blank" rel="noopener noreferrer">www.gmsbd.com</a></div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon" aria-hidden="true">F</span>
+                <div><small>Facebook Profile</small><a href="https://www.facebook.com/share/19pHyf8fFW/" target="_blank" rel="noopener noreferrer">Visit Facebook Profile</a></div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon" aria-hidden="true">@</span>
+                <div><small>Email</small><span>Contact details can be added after public-sharing approval.</span></div>
+              </div>
+            </div>
+          </article>
+          <div class="cta">
+            <div>
+              <h3>Connect Professionally</h3>
+              <p>Visit the company website for more information about GMS Composite Knitting Ind. Ltd.</p>
+            </div>
+            <a class="btn btn-primary" href="https://www.gmsbd.com/" target="_blank" rel="noopener noreferrer">Visit Company Website ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> NUR-A-ALAM. Professional Profile.</span>
+      <span>Designed for professional presentation.</span>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
